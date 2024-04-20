@@ -90,12 +90,7 @@ const RegistrationForm = () => {
             </label>
             <label>
               Фото:
-              <input
-                type="text"
-                name="photo"
-                value={p.photo}
-                onChange={(e) => handleParticipantChange(e, index)}
-              />
+              <input type="file" accept="image/*" onChange={(e) => handleParticipantChange(e, index)} />
             </label>
             <label>
               Обо мне:
